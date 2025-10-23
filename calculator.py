@@ -11,12 +11,15 @@ def subtract(a, b):
     """Subtract b from a"""
     return a - b
 
-def multiply(a, b)
+def multiply(a, b):
     """Multiply two numbers"""
     return a * b
 
 def divide(a, b):
-    """Divide a by b"""
+    """Divide a by b
+    Handles division by zero by returning None."""
+    if b == 0:
+        return None
     return a / b
 
 def power(a, b):
@@ -35,23 +38,27 @@ def main():
     result = subtract(10, 5)
     print(f"10 - 5 = {result}")
     
-    # Test multiplication - BUG: Wrong function called
-    result = add(10, 5)
+    # Test multiplication - Corrected function called
+    result = multiply(10, 5)
     print(f"10 * 5 = {result}")
     
-    # Test division - BUG: Division by zero not handled
+    # Test division - Division by zero handled
     result = divide(10, 0)
-    print(f"10 / 0 = {result}")
+    if result is None:
+        print("Division by zero")
+    else:
+        print(f"10 / 0 = {result}")
     
-    # Test power - BUG: Wrong order of arguments
-    result = power(3, 2)
+    # Test power - Correct order of arguments
+    result = power(2, 3)
     print(f"2 ^ 3 = {result}")
     
-    # BUG: Undefined variable
+    # Define undefined variable
+    count = 5
     print(f"Total calculations: {count}")
     
     print("=" * 40)
-    print("Calculations complete!"
+    print("Calculations complete!")
 
 if __name__ == "__main__":
     main()
