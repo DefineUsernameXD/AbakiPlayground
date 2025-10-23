@@ -3,33 +3,45 @@ Simple Calculator with Intentional Bugs
 This calculator has several errors that need to be fixed!
 """
 
-def add(a, b):
-    """Add two numbers"""
-    return a + b
-
-def subtract(a, b):
-    """Subtract b from a"""
-    return a - b
-
-def multiply(a, b)
+def multiply(a, b):
     """Multiply two numbers"""
     return a * b
-
+def add(a, b):
+    """Multiply two numbers"""
+    return a * b
 def divide(a, b):
     """Divide a by b"""
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 def power(a, b):
     """Raise a to the power of b"""
     return a ** b
-
-def main():
-    print("Welcome to the Buggy Calculator!")
-    print("=" * 40)
+def subtract(a, b):
+    """Subtract b from a"""
+    """Divide a by b"""
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+def power(a, b):
+    """Raise a to the power of b"""
+    return a ** b
+    # Test multiplication - BUG: Wrong function called
+    result = multiply(10, 5)
+    print(f"10 * 5 = {result}")
     
-    # Test addition
-    result = add(10, 5)
-    print(f"10 + 5 = {result}")
+    # Test division - BUG: Division by zero not handled
+    try:
+        result = divide(10, 0)
+    except ValueError as e:
+        print(e)
+    
+    print(f"2 ^ 3 = {result}")
+if __name__ == "__main__":
+    main()
+    count = 5
+    print(f"Total calculations: {count}")
     
     # Test subtraction
     result = subtract(10, 5)
