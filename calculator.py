@@ -15,18 +15,15 @@ def multiply(a, b):
     """Multiply two numbers."""
     return a * b
 
-
 def divide(a, b):
     """Divide a by b, handling division by zero."""
     if b == 0:
         return "Cannot divide by zero!"
     return a / b
 
-
 def power(a, b):
     """Raise a to the power of b."""
     return a ** b
-
 
 def main():
     """Main function to run the calculator."""
@@ -64,7 +61,6 @@ def main():
 
     print("=" * 40)
     print("Calculations complete!")
-
 
 if __name__ == "__main__":
     main()
