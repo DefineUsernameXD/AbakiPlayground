@@ -1,18 +1,18 @@
 """
-Simple Calculator with Intentional Bugs Fixed
+Simple Calculator
 This calculator performs basic arithmetic operations.
 """
 
 def add(a, b):
-    """Add two numbers"""
+    """Add two numbers."""
     return a + b
 
 def subtract(a, b):
-    """Subtract b from a"""
+    """Subtract b from a."""
     return a - b
 
 def multiply(a, b):
-    """Multiply two numbers"""
+    """Multiply two numbers."""
     return a * b
 
 def divide(a, b):
@@ -22,14 +22,14 @@ def divide(a, b):
     return a / b
 
 def power(a, b):
-    """Raise a to the power of b"""
+    """Raise a to the power of a by b."""
     return a ** b
 
 def main():
-    print("Welcome to the Buggy Calculator!")
+    print("Welcome to the Calculator!")
     print("=" * 40)
     
-    count = 0 # Initialize count
+    count = 0  # Initialize calculation count
     
     # Test addition
     result = add(10, 5)
@@ -53,7 +53,7 @@ def main():
     
     # Test power
     result = power(2, 3)
-    print(f"2 ^ 3 = {result}")
+    print(f"2 ** 3 = {result}")
     count += 1
     
     print(f"Total calculations: {count}")
