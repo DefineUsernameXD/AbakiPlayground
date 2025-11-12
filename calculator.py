@@ -47,8 +47,8 @@ def main():
     count += 1
     
     # Test division
-    result = divide(10, 0)
-    print(f"10 / 0 = {result}")
+    result = divide(10, 2)
+    print(f"10 / 2 = {result}")
     count += 1
     
     # Test power
