@@ -29,7 +29,7 @@ def main():
     print("Welcome to the Buggy Calculator!")
     print("=" * 40)
     
-    count = 0 # Initialize count
+    count = 0  # Initialize count
     
     # Test addition
     result = add(10, 5)
