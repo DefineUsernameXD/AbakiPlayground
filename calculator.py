@@ -11,12 +11,14 @@ def subtract(a, b):
     """Subtract b from a"""
     return a - b
 
-def multiply(a, b)
+def multiply(a, b):
     """Multiply two numbers"""
     return a * b
 
 def divide(a, b):
     """Divide a by b"""
+    if b == 0:
+        return "Cannot divide by zero!"
     return a / b
 
 def power(a, b):
@@ -27,31 +29,37 @@ def main():
     print("Welcome to the Buggy Calculator!")
     print("=" * 40)
     
+    count = 0
     # Test addition
     result = add(10, 5)
     print(f"10 + 5 = {result}")
+    count += 1
     
     # Test subtraction
     result = subtract(10, 5)
     print(f"10 - 5 = {result}")
+    count += 1
     
     # Test multiplication - BUG: Wrong function called
-    result = add(10, 5)
+    result = multiply(10, 5)
     print(f"10 * 5 = {result}")
+    count += 1
     
     # Test division - BUG: Division by zero not handled
-    result = divide(10, 0)
-    print(f"10 / 0 = {result}")
+    result = divide(10, 2)
+    print(f"10 / 2 = {result}")
+    count += 1
     
     # Test power - BUG: Wrong order of arguments
-    result = power(3, 2)
+    result = power(2, 3)
     print(f"2 ^ 3 = {result}")
+    count += 1
     
     # BUG: Undefined variable
     print(f"Total calculations: {count}")
     
     print("=" * 40)
-    print("Calculations complete!"
+    print("Calculations complete!")
 
 if __name__ == "__main__":
     main()
