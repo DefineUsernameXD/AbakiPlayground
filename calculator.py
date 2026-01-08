@@ -2,6 +2,14 @@
 Simple Calculator with Intentional Bugs
 This calculator has several errors that need to be fixed!
 """
+# Image Description:
+# Filename: birne.jpg
+# English Filename: pear.jpg
+# Description: The image shows three pears.
+# Color: The pears are light green and yellowish with small dark spots.
+# Amount: There are three pears in total.
+# Other details: Each pear has a brown stem. The background is solid white.
+
 
 def add(a, b):
     """Add two numbers"""
