@@ -1,3 +1,8 @@
+# Image Description (birne.jpg):
+# The image 'birne.jpg' (which translates to 'pear.jpg' in English) shows three 
+# light green and yellowish pears. They have small dark speckles on their skin 
+# and brown stems. The pears are arranged together against a plain white background.
+
 """
 Simple Calculator with Intentional Bugs
 This calculator has several errors that need to be fixed!
